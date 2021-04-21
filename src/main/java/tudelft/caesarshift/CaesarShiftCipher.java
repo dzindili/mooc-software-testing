@@ -20,6 +20,7 @@ public class CaesarShiftCipher {
             } else if ((char) (currentChar + shift) < 'a'){
                 currentChar = (char) (currentChar + 26);
             }
+            sb.deleteCharAt(sb.length()-1);
             sb.append((char) (currentChar + shift));
         }
 
